@@ -1,2 +1,2 @@
-# HackerStudio
-Complete Windows studio for hacking
+# HackerStudio | bin - необходимые файлы и библиотеки
+Файлы для работы загрузчика модов и визуальная строка загрузчика HSML
