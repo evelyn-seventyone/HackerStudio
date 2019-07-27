@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project author="fashi" authorOS="Windows 10" createdAt="1563993709631" ideName="HackerStudio IDE Premium" ideVersion="2.4" ideVersionHash="2017103112" name="hackerstudio" packageName="lsdproject" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1564261593726">
+  <tree>
+    <expanded>
+    <path src=""/>
+      <path src="/src"/>
+      <path src="/src/.data"/>
+      <path src="/src/.theme"/>
+      <path src="/src/lsdproject"/>
+      <path src="/src/lsdproject/forms"/>
+      <path src="/src/lsdproject/modules"/>
+    </expanded>
+  </tree>
+  <openedFiles>
+  <file src="hackerstudio.dnproject"/>
+    <file src="src/lsdproject/modules/MainModule.php"/>
+    <file selected="1" src="src/lsdproject/forms/MainForm.php"/>
+  </openedFiles>
+  <files/>
+  <behaviours>
+  <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\PhpProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\JavaPlatformBehaviour"/>
+    <behaviour class="ide\project\behaviours\GuiFrameworkProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\RunBuildProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\ShareProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\BackupProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\GradleProjectBehaviour"/>
+  </behaviours>
+</project>

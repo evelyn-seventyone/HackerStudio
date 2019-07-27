@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416" prefWidth="728" styleClass="">
+  <children>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#00000000" focusTraversable="false" height="416" id="rect" layoutX="0" layoutY="0" stroke="#b3b3b3" strokeType="INSIDE" strokeWidth="2" styleClass="" width="728"/>
+    <TabPaneEx focusTraversable="false" id="tabPane" layoutX="2" layoutY="2" prefHeight="412" prefWidth="724" styleClass="tab-pane " tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Главный экран">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="376" prefWidth="724" styleClass="">
+              <children>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="16" layoutY="8" prefHeight="352" prefWidth="672" styleClass="label " text="HackerStudio версия 2.5 Premium&#10;Официальная верификация by k7extreme&#10; &#10;Для начала работы с HackerStudio откройте вкладку HS ModLoader&#10;&#10;При помощи HS ModLoader вы сможете установить:&#10;• Моды (добавляют команды)&#10;• Контент-паки (добавляют возможность использовать взаимодействия между модами)" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="14"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="HS ModLoader">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="376" prefWidth="724" styleClass="">
+              <children>
+                <ScrollPane focusTraversable="false" hbarPolicy="AS_NEEDED" hvalue="0" id="container" layoutX="0" layoutY="56" prefHeight="320" prefWidth="724" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+                  <content>
+                    <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="0" prefWidth="0" styleClass="">
+                      <children/>
+                    </AnchorPane>
+                  </content>
+                </ScrollPane>
+                <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="8" layoutY="4" prefHeight="48" prefWidth="672" styleClass="label " text="HS ModLoader - загрузчик модов для Hackerstudio&#10;Откройте Launcher и пропишите файл пакета мода&#10;Установленные моды:" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Source Sans Pro Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Настройки">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="376" prefWidth="724" styleClass="">
+              <children>
+                <LabelEx alignment="TOP_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="16" layoutY="24" prefHeight="336" prefWidth="152" styleClass="label " text="Настройки HS:&#10;&#10;&#10;Использовать сертификаты&#10; &#10;Период опроса HTTPS (сек)&#10; &#10; &#10;Настройки HS ModLoader:&#10; &#10; &#10;Git-загрузка модов&#10; &#10;Бета-версии модов&#10; &#10;Стандартный branch&#10; &#10;Отключить mod_data" textAlignment="RIGHT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Source Sans Pro Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+                <Separator focusTraversable="false" id="separator" layoutX="8" layoutY="136" orientation="HORIZONTAL" prefHeight="8" prefWidth="704" styleClass="separator "/>
+                <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+                <ComboBox editable="false" focusTraversable="true" id="combobox" layoutX="184" layoutY="259" prefHeight="16" prefWidth="144" promptText="" styleClass="combo-box-base combo-box " value="latest" visibleRowCount="10">
+                  <items xmlns:fx="http://javafx.com/fxml">
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="master"/>
+                      <String fx:value="beta"/>
+                      <String fx:value="latest"/>
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-combobox" visible="1"/>
+                <CheckBox alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkbox" layoutX="184" layoutY="292" prefHeight="24" prefWidth="144" styleClass="check-box " text="" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Source Sans Pro Regular" size="12"/>
+                  </font>
+                </CheckBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-checkbox" visible="1"/>
+                <CheckBox alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkboxAlt" layoutX="184" layoutY="228" prefHeight="24" prefWidth="144" styleClass="check-box " text="" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Source Sans Pro Regular" size="12"/>
+                  </font>
+                </CheckBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-checkboxAlt" visible="1"/>
+                <CheckBox alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkbox3" layoutX="184" layoutY="196" prefHeight="24" prefWidth="144" selected="true" styleClass="check-box " text="" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Source Sans Pro Regular" size="12"/>
+                  </font>
+                </CheckBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-checkbox3" visible="1"/>
+                <CheckBox alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkbox4" layoutX="184" layoutY="67" prefHeight="24" prefWidth="144" selected="true" styleClass="check-box " text="" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Source Sans Pro Regular" size="12"/>
+                  </font>
+                </CheckBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-checkbox4" visible="1"/>
+                <org.develnext.jphp.ext.javafx.support.control.NumberSpinner alignment="CENTER_LEFT" arrowsStyle="RIGHT_VERTICAL" editable="false" focusTraversable="true" id="numberField" initial="1" layoutX="184" layoutY="101" max="2147483647" min="1" prefHeight="24" prefWidth="56" step="1" styleClass="spinner "/>
+                <Data cursor="DEFAULT" enabled="1" id="data-numberField" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPaneEx>
+    <Data cursor="DEFAULT" draggable="NONE" enabled="1" id="data-tabPane" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="hidewindow" layoutX="656" layoutY="6" prefHeight="24" prefWidth="32" styleClass="button " text="_" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-hidewindow" tooltipText="Свернуть окно HS" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="shutdown" layoutX="690" layoutY="6" prefHeight="24" prefWidth="32" styleClass="button " text="x" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-shutdown" tooltipText="Завершить сеанс HS" visible="1"/>
+    <Button alignment="TOP_CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="move" layoutX="598" layoutY="6" prefHeight="24" prefWidth="32" styleClass="button " text="." textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="MOVE" enabled="1" id="data-move" tooltipText="Перетаскивание окна" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+    <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="true" id="edit" layoutX="432" layoutY="6" prefColumnCount="12" prefHeight="24" prefWidth="144" promptText="" styleClass="text-input text-field " text="C:\HS Files\mods">
+      <font>
+        <Font name="Source Sans Pro Regular" size="12"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+    <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="328" layoutY="10" prefHeight="16" prefWidth="96" styleClass="label " text="Папка модов:" textAlignment="RIGHT" underline="false" wrapText="false">
+      <font>
+        <Font name="Source Sans Pro Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+  </children>
+</AnchorPane>
