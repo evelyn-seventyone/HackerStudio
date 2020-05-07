@@ -1,2 +1,2 @@
 # HackerStudio
-Complete Windows studio for hacking
+Updated HackerStudio
