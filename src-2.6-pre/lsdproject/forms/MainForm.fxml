@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416" prefWidth="728" styleClass="">
+  <children>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#00000000" focusTraversable="false" height="416" id="rect" layoutX="0" layoutY="0" stroke="#b3b3b3" strokeType="INSIDE" strokeWidth="2" styleClass="" width="728"/>
+    <TabPaneEx focusTraversable="false" id="tabPane" layoutX="2" layoutY="2" prefHeight="412" prefWidth="724" style="-fx-background-color: #1a1a1a;" styleClass="tab-pane " tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Главная">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="376" prefWidth="724" styleClass="">
+              <children>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="16" layoutY="8" prefHeight="352" prefWidth="672" styleClass="label " text="HackerStudio версия 2.6-pre Premium &#10;Fork by evelyn-seventyone&#10;&#10;Для начала работы с HackerStudio откройте вкладку HS ModLoader&#10;&#10;При помощи HS ModLoader вы сможете установить:&#10;• Моды (добавляют команды)&#10;• Контент-паки (добавляют возможность использовать взаимодействия между модами)" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Lucida Console" size="14"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="HS ModLoader">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="376" prefWidth="724" styleClass="">
+              <children>
+                <ScrollPane focusTraversable="false" hbarPolicy="AS_NEEDED" hvalue="0" id="container" layoutX="0" layoutY="56" prefHeight="320" prefWidth="724" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+                  <content>
+                    <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="0" prefWidth="0" styleClass="">
+                      <children/>
+                    </AnchorPane>
+                  </content>
+                </ScrollPane>
+                <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="ui_hsml_label" layoutX="8" layoutY="4" prefHeight="48" prefWidth="672" styleClass="label " text="HS ModLoader - загрузчик модов для Hackerstudio&#10;Откройте Launcher и пропишите файл пакета мода&#10;Установленные моды:" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Lucida Console" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-ui_hsml_label" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPaneEx>
+    <Data cursor="DEFAULT" draggable="NONE" enabled="1" id="data-tabPane" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="hidewindow" layoutX="656" layoutY="8" prefHeight="16" prefWidth="32" styleClass="button " text="_" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-hidewindow" tooltipText="Свернуть" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="shutdown" layoutX="690" layoutY="8" prefHeight="16" prefWidth="32" styleClass="button " text="x" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-shutdown" tooltipText="Закрыть" visible="1"/>
+    <Button alignment="TOP_CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="move" layoutX="600" layoutY="8" prefHeight="24" prefWidth="32" styleClass="button " text="." textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="MOVE" enabled="1" id="data-move" tooltipText="Перемещение окна" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+    <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="edit" layoutX="432" layoutY="9" prefColumnCount="12" prefHeight="16" prefWidth="144" promptText="" styleClass="text-input text-field " text="C:\HS Files\mods">
+      <font>
+        <Font name="Lucida Console" size="12"/>
+      </font>
+    </TextField>
+    <Data cursor="HAND" enabled="1" id="data-edit" tooltipText="Открыть в проводнике" visible="1"/>
+    <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="352" layoutY="12" prefHeight="16" prefWidth="72" styleClass="label " text="Моды в:" textAlignment="RIGHT" underline="false" wrapText="false">
+      <font>
+        <Font name="Lucida Console" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+  </children>
+</AnchorPane>
